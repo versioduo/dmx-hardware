@@ -8,7 +8,7 @@
 
 ## Schematic
 
-[PDF](dmx-schematic.pdf)
+[PDF](dmx.pdf)
 
 ## Bill Of Materials
 
