@@ -3889,7 +3889,7 @@
 
   (sheet (at 81.28 168.91) (size 22.86 5.08) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
+    (fill (color 255 255 194 1.0000))
     (uuid 1b21f4b2-19b6-442e-b6c3-9ab356361c9a)
     (property "Sheetname" "DMX Out" (at 81.28 168.1984 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
