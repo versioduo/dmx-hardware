@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "V2 dmx")
-		(date "2023-01-07")
-		(rev "2")
+		(date "2024-07-17")
+		(rev "3")
 		(company "Versio Duo")
 		(comment 1 "MIDI to DMX Bridge")
 	)
@@ -824,7 +824,7 @@
 			(in_bom no)
 			(on_board yes)
 			(property "Reference" "ICON"
-				(at -3.81 2.54 0)
+				(at -3.302 3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -833,7 +833,7 @@
 				)
 			)
 			(property "Value" "V2-logo"
-				(at -5.08 -6.35 0)
+				(at -4.572 -5.588 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -843,7 +843,7 @@
 				)
 			)
 			(property "Footprint" "V2_Artwork:Logo_Small"
-				(at 0 -7.62 0)
+				(at 0 -8.128 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -852,7 +852,7 @@
 				)
 			)
 			(property "Datasheet" ""
-				(at 0 0 0)
+				(at 0.508 1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -890,7 +890,7 @@
 			(symbol "V2-logo_1_0"
 				(polyline
 					(pts
-						(xy -3.81 1.27) (xy 2.54 1.27) (xy 2.54 -3.81) (xy -3.81 -3.81) (xy -3.81 -2.54)
+						(xy -3.302 2.54) (xy 3.048 2.54) (xy 3.048 -2.54) (xy -3.302 -2.54) (xy -3.302 -1.27)
 					)
 					(stroke
 						(width 0.3)
@@ -901,7 +901,7 @@
 					)
 				)
 				(text "V2"
-					(at -0.7135 -1.6753 0)
+					(at -0.2055 -0.4053 0)
 					(effects
 						(font
 							(size 3 3)
@@ -3629,9 +3629,9 @@
 		)
 		(symbol "power:+3V3"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3729,8 +3729,8 @@
 			(symbol "+3V3_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+3V3"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3749,9 +3749,9 @@
 		)
 		(symbol "power:+5V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3849,8 +3849,8 @@
 			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+5V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3869,9 +3869,9 @@
 		)
 		(symbol "power:Earth"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3890,7 +3890,6 @@
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Footprint" ""
@@ -3982,8 +3981,8 @@
 			(symbol "Earth_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "Earth"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4002,9 +4001,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -4078,8 +4077,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4161,7 +4160,7 @@
 				(pin power_out line
 					(at 0 0 90)
 					(length 0)
-					(name "pwr"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6309,7 +6308,7 @@
 				)
 			)
 		)
-		(property "Value" "TPS78433QWDRBRQ1 "
+		(property "Value" "TPS78433QWDRBRQ1"
 			(at 193.04 29.21 0)
 			(effects
 				(font

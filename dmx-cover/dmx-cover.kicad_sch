@@ -107,7 +107,7 @@
 			(in_bom no)
 			(on_board yes)
 			(property "Reference" "ICON"
-				(at -3.81 2.54 0)
+				(at -3.302 3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -116,7 +116,7 @@
 				)
 			)
 			(property "Value" "V2-logo"
-				(at -5.08 -6.35 0)
+				(at -4.572 -5.588 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -126,7 +126,7 @@
 				)
 			)
 			(property "Footprint" "V2_Artwork:Logo_Small"
-				(at 0 -7.62 0)
+				(at 0 -8.128 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -135,7 +135,7 @@
 				)
 			)
 			(property "Datasheet" ""
-				(at 0 0 0)
+				(at 0.508 1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -173,7 +173,7 @@
 			(symbol "V2-logo_1_0"
 				(polyline
 					(pts
-						(xy -3.81 1.27) (xy 2.54 1.27) (xy 2.54 -3.81) (xy -3.81 -3.81) (xy -3.81 -2.54)
+						(xy -3.302 2.54) (xy 3.048 2.54) (xy 3.048 -2.54) (xy -3.302 -2.54) (xy -3.302 -1.27)
 					)
 					(stroke
 						(width 0.3)
@@ -184,7 +184,7 @@
 					)
 				)
 				(text "V2"
-					(at -0.7135 -1.6753 0)
+					(at -0.2055 -0.4053 0)
 					(effects
 						(font
 							(size 3 3)
@@ -307,7 +307,7 @@
 					)
 				)
 			)
-			(property "Footprint" "V2_Mechanical:Mounting_Hole_2mm_Pad_5.2mm"
+			(property "Footprint" "V2_Mechanical:MountingHole_2mm_Pad_5.2mm"
 				(at 0 -10.16 0)
 				(effects
 					(font
@@ -550,9 +550,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -626,8 +626,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -709,7 +709,7 @@
 				(pin power_out line
 					(at 0 0 90)
 					(length 0)
-					(name "pwr"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -818,7 +818,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 142.24 68.58 0)
 			(effects
 				(font
@@ -893,6 +893,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" "0"
+			(at 138.43 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "dmx-cover"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
@@ -947,6 +956,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 162.56 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 162.56 124.46 0)
 			(effects
 				(font
@@ -1018,6 +1036,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" "0"
+			(at 182.88 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "dmx-cover"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
@@ -1054,7 +1081,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "V2_Mechanical:Mounting_Hole_2mm_Pad_5.2mm"
+		(property "Footprint" "V2_Mechanical:MountingHole_2mm_Pad_5.2mm"
 			(at 134.62 53.34 0)
 			(effects
 				(font
@@ -1072,7 +1099,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole with connection"
+			(at 144.78 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 144.78 53.34 0)
 			(effects
 				(font
@@ -1137,7 +1173,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Special symbol for telling ERC where power comes from"
 			(at 142.24 68.58 0)
 			(effects
 				(font
@@ -1204,7 +1240,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole without connection"
+			(at 146.05 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 146.05 93.98 0)
 			(effects
 				(font
@@ -1275,6 +1320,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" "0"
+			(at 116.84 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "dmx-cover"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
@@ -1311,7 +1365,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "V2_Mechanical:Mounting_Hole_2mm_Pad_5.2mm"
+		(property "Footprint" "V2_Mechanical:MountingHole_2mm_Pad_5.2mm"
 			(at 134.62 62.23 0)
 			(effects
 				(font
@@ -1329,7 +1383,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole with connection"
+			(at 144.78 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 144.78 62.23 0)
 			(effects
 				(font
